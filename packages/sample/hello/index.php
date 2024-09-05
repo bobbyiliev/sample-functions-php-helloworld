@@ -6,6 +6,8 @@ function main(array $args) : array
     
     $greeting = "Hello {$name}!";
     echo $greeting;
+
+    error_log("This is a runtime error log message");
  
     return [
         'body' => $greeting,
